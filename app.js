@@ -1,11 +1,11 @@
 const translations = {
   ko: {
-    title: "글로벌 텍스프리 안내",
+    title: "택스프리 가이드",
     subtitle: "약국 방문 고객을 위한 쉽고 빠른 세금 환급 가이드",
     heroTitle: "계산 후 바로 옆에서 환급 받으세요!",
     heroDesc: "약국에서 약을 구입하신 후, 영수증을 지참하여 오른쪽에 위치한 <strong>글로벌 텍스프리(Global Tax Free)</strong> 전용 키오스크에서 환급 절차를 진행하세요.",
     
-    // Map labels (handled via translate attributes in SVG/HTML if needed, or referenced in script)
+    // Map labels
     mapTitle: "약국 내 키오스크 위치 약도",
     mapDesc: "약국 계산대에서 계산을 마친 후, 오른쪽으로 이동하시면 주황색 <strong>글로벌 텍스프리 환급 기기</strong>가 있습니다.",
     mapCurrent: "현위치",
@@ -39,7 +39,7 @@ const translations = {
     footerNote: "감사합니다. 즐겁고 건강한 여행 되시길 바랍니다!"
   },
   en: {
-    title: "Global Tax Free Guide",
+    title: "Tax Free Guide",
     subtitle: "Quick & Easy Tax Refund Guide for Pharmacy Customers",
     heroTitle: "Get Refunded Right Next to the Checkout!",
     heroDesc: "After purchasing at the pharmacy, take your receipt and scan it at the <strong>Global Tax Free</strong> kiosk located just to the right.",
@@ -75,7 +75,7 @@ const translations = {
     footerNote: "Thank you! Enjoy a safe and healthy trip in Korea!"
   },
   zh: {
-    title: "Global Tax Free 退税指南",
+    title: "退税指南",
     subtitle: "专为药店顾客准备的快速简便退税指南",
     heroTitle: "结账后在旁边即可直接办理退税！",
     heroDesc: "在药店结账并拿到退税单后，请前往右侧的 <strong>Global Tax Free（环球免税）</strong> 专用自助终端机办理扫码退税。",
@@ -89,7 +89,7 @@ const translations = {
     step1Title: "第一步. 结账并索取退税单",
     step1Desc: "购买药品时请出示护照。单笔消费满 15,000 韩元以上时，请向店员索取 <strong>Global Tax Free 专用退税单</strong>。",
     
-    step2Title: "第二步. 前往收银台右侧的退税机",
+    step2Title: "第二步. 前往收银台右侧의 退税机",
     step2Desc: "移步至收银台右侧的橙色 Global Tax Free 自助退税机。按照屏幕提示，扫描您的护照和退税单上的条形码。",
     
     step3Title: "第三步. 选择退税方式",
@@ -104,14 +104,14 @@ const translations = {
     tip2Title: "必须携带护照",
     tip2Desc: "退税机扫描需要出示您的护照原件或电子护照。",
     tip3Title: "Global Tax Free 专用",
-    tip3Desc: "本药店配备的退税终端机亦支持扫描在韩国其他商户获取的 Global Tax Free 退税单。",
+    tip3Desc: "本药店配备의 退税终端机亦支持扫描在韩国其他商户获取의 Global Tax Free 退税单。",
     tip4Title: "退税对象",
     tip4Desc: "在韩滞留未满 6 个月的外国游客。",
     
     footerNote: "谢谢光临！祝您在韩国度过愉快健康的旅程！"
   },
   ja: {
-    title: "Global Tax Free 免税ガイド",
+    title: "免税ガイド",
     subtitle: "薬局を訪れるお客様のための迅速・簡単な免税手続きガイド",
     heroTitle: "お会計のすぐ隣で免税手続きが完了！",
     heroDesc: "薬局でお会計後、レシート（免税書類）を持ってお隣の右側にある <strong>Global Tax Free（グローバル税金返還）</strong> 専用キオスクで払い戻しを行ってください。",
@@ -123,12 +123,12 @@ const translations = {
     mapKiosk: "免税キオスク",
     
     step1Title: "Step 1. お会計＆免税書類の受け取り",
-    step1Desc: "お薬の購入時にパスポートをご提示ください。15,000ウォン以上のお買い上げで、スタッフに <strong>Global Tax Free 払い戻し用紙</strong> をご請求ください。",
+    step1Desc: "お薬의 購入時にパスポートをご提示ください。15,000ウォン以上のお買い上げで、スタッフに <strong>Global Tax Free 払い戻し用紙</strong> をご請求ください。",
     
     step2Title: "Step 2. レジ右側のキオスクへ移動",
     step2Desc: "レジの右側にあるオレンジ色の Global Tax Free キオスクに移動します。画面の指示に従って、パスポートと払い戻し用紙のバーコードをスキャンします。",
     
-    step3Title: "Step 3. 返金方法の選択",
+    step3Title: "Step 3. 返金方法의 選択",
     step3Desc: "キオスク画面でご希望の返金方法（クレジットカード、Alipay、WeChat Payなど）を選択して、その場で払い戻し手続きを行います。",
     
     step4Title: "Step 4. 空港での税関確認（必要な場合）",
@@ -140,7 +140,7 @@ const translations = {
     tip2Title: "パスポート必須",
     tip2Desc: "キオスクでの読み取りには、現物のパスポートまたはモバイルパスポートが必要です。",
     tip3Title: "Global Tax Free 専用キオスク",
-    tip3Desc: "当薬局のキオスクは Global Tax Free 加盟店専用機ですが、他店で発行された同社の免税書類もスキャン可能です。",
+    tip3Desc: "当薬局のキオスクは Global Tax Free 加盟店専用機ですが、他店で発行された同社の免税書類도 스캔 가능합니다.",
     tip4Title: "対象となる旅行者",
     tip4Desc: "韓国滞在期間が 6ヶ月未満 の外国人観光客。",
     
@@ -151,7 +151,7 @@ const translations = {
 document.addEventListener("DOMContentLoaded", () => {
   const langButtons = document.querySelectorAll(".lang-btn");
   
-  // Set default language (default to 'ko' so the owner can read it easily, but tourists will change it)
+  // Set default language
   let currentLang = localStorage.getItem("taxfree_lang") || "ko";
   
   // Apply translation
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (mapKioskText && data.mapKiosk) mapKioskText.textContent = data.mapKiosk;
       
       // Update page title
-      document.title = data.title;
+      document.title = "베리뉴약국 " + data.title;
       
       // Update HTML lang attribute
       document.documentElement.lang = lang;

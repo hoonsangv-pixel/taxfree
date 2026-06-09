@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>글로벌 텍스프리 안내</title>
-  <meta name="description" content="약국 방문 고객을 위한 글로벌 텍스프리 키오스크 위치 안내 및 세금 환급 가이드.">
+  <title>베리뉴약국 택스프리 가이드</title>
+  <meta name="description" content="베리뉴약국 방문 고객을 위한 글로벌 텍스프리 키오스크 위치 안내 및 세금 환급 가이드.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="app-container">
-    <!-- Header with logo and language buttons (KO, EN, ZH, JA) -->
+    <!-- Header with logo image (logo.png) and right-aligned title text -->
     <header>
       <div class="logo-area">
-        <div class="logo-icon" aria-hidden="true">₩</div>
-        <div class="logo-text" data-translate="title">글로벌 텍스프리 안내</div>
+        <img src="logo.png" alt="Berrynew Pharmacy Logo" class="logo-img">
+        <div class="logo-text-divider" aria-hidden="true"></div>
+        <div class="logo-text" data-translate="title">택스프리 가이드</div>
       </div>
       <nav class="lang-selector" aria-label="Language Selector">
         <button class="lang-btn active" data-lang="ko" role="tab" aria-selected="true">KO</button>
@@ -31,18 +32,17 @@
         <p data-translate="heroDesc">약국에서 약을 구입하신 후, 영수증을 지참하여 오른쪽에 위치한 <strong>글로벌 텍스프리(Global Tax Free)</strong> 전용 키오스크에서 환급 절차를 진행하세요.</p>
       </section>
 
-      <!-- Map Card (Handdrawn Sketch Visualized in Elegant Vector) -->
+      <!-- Map Card -->
       <section class="map-card" aria-labelledby="map-heading">
         <h2 id="map-heading" data-translate="mapTitle">약국 내 키오스크 위치 약도</h2>
         <p data-translate="mapDesc">약국 계산대에서 계산을 마친 후, 오른쪽으로 이동하시면 주황색 <strong>글로벌 텍스프리 환급 기기</strong>가 있습니다.</p>
         
         <div class="map-container">
-          <!-- SVG Map corresponding exactly to the hand-drawn diagram -->
           <svg viewBox="0 0 450 320" class="map-svg" width="100%">
             <!-- Background base -->
             <rect width="450" height="320" rx="10" fill="#fcfbfe" />
             
-            <!-- Grid Lines for Modern Tech Look -->
+            <!-- Grid Lines -->
             <defs>
               <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
                 <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f1ecf8" stroke-width="1"/>
@@ -50,47 +50,36 @@
             </defs>
             <rect width="450" height="320" fill="url(#grid)" rx="10" />
 
-            <!-- Pharmacy Checkout Area (Horizontal Bar - 계산대) -->
-            <!-- Left-to-right table representing Checkout Desk -->
+            <!-- Pharmacy Checkout Area (Horizontal Bar) -->
             <rect x="20" y="130" width="280" height="50" rx="6" class="svg-checkout-table" />
             
-            <!-- Red Register Slots on Checkout Desk (Handdrawn: 계산대 빨간 상자) -->
+            <!-- Red Register Slots -->
             <rect x="70" y="140" width="30" height="30" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" />
-            <path d="M75 155 Q80 145 85 165 T95 150" fill="none" stroke="#ef4444" stroke-width="1.5" />
-            
             <rect x="150" y="140" width="30" height="30" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" />
-            <path d="M155 155 Q160 145 165 165 T175 150" fill="none" stroke="#ef4444" stroke-width="1.5" />
-            
             <rect x="230" y="140" width="30" height="30" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" />
-            <path d="M235 155 Q240 145 245 165 T255 150" fill="none" stroke="#ef4444" stroke-width="1.5" />
 
             <text x="120" y="115" class="svg-checkout-text" id="map-label-checkout">약국 계산대</text>
 
-            <!-- Kiosk Area (Vertical Column on the Right - 키오스크) -->
-            <!-- Top-to-bottom frame representing Kiosks -->
+            <!-- Kiosk Area (Vertical Column on the Right) -->
             <rect x="300" y="20" width="60" height="160" rx="6" fill="#fffaf0" stroke="#f97316" stroke-width="1.5" />
             
-            <!-- Green Kiosks (Handdrawn: 키오스크 녹색 상자) -->
+            <!-- Green Kiosks -->
             <rect x="305" y="30" width="50" height="35" rx="4" fill="#fff" stroke="#f97316" stroke-width="1.5" />
-            
             <rect x="305" y="75" width="50" height="35" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5" />
-            <path d="M310 92 L320 82 M330 102 L340 92" fill="none" stroke="#22c55e" stroke-width="1.5" />
-            
             <rect x="305" y="120" width="50" height="35" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5" />
-            <path d="M310 137 L320 127 M330 147 L340 137" fill="none" stroke="#22c55e" stroke-width="1.5" />
             
-            <text x="370" y="105" class="svg-kiosk-text" id="map-label-kiosk">텍스프리 키오스크</text>
+            <text x="300" y="205" class="svg-kiosk-text" id="map-label-kiosk">텍스프리 키오스크</text>
 
-            <!-- Current Location Node (Blue Circle - 현위치) -->
+            <!-- Current Location Node -->
             <circle cx="180" cy="245" r="14" class="svg-current-pulse" />
             <circle cx="180" cy="245" r="9" class="svg-current-circle" />
             <text x="180" y="278" text-anchor="middle" class="svg-label-text" id="map-label-current">현위치</text>
 
-            <!-- Animated Path Line (Blue dotted path going Right then Up to Kiosk) -->
-            <path d="M 205 245 L 390 245 L 390 105 L 375 105" fill="none" class="svg-path-line" />
+            <!-- Adjusted Path Line -->
+            <path d="M 205 245 L 390 245 L 390 140 L 375 140" fill="none" class="svg-path-line" />
             
-            <!-- Arrow pointer pointing to kiosk -->
-            <path d="M 378 100 L 368 105 L 378 110 Z" class="svg-arrow-head" />
+            <!-- Arrow pointer -->
+            <path d="M 378 135 L 368 140 L 378 145 Z" class="svg-arrow-head" />
           </svg>
         </div>
       </section>

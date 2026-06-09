@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글로벌 텍스프리 안내</title>
+  <meta name="description" content="약국 방문 고객을 위한 글로벌 텍스프리 키오스크 위치 안내 및 세금 환급 가이드.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header with logo and language buttons (KO, EN, ZH, JA) -->
+    <header>
+      <div class="logo-area">
+        <div class="logo-icon" aria-hidden="true">₩</div>
+        <div class="logo-text" data-translate="title">글로벌 텍스프리 안내</div>
+      </div>
+      <nav class="lang-selector" aria-label="Language Selector">
+        <button class="lang-btn active" data-lang="ko" role="tab" aria-selected="true">KO</button>
+        <button class="lang-btn" data-lang="en" role="tab" aria-selected="false">EN</button>
+        <button class="lang-btn" data-lang="zh" role="tab" aria-selected="false">中文</button>
+        <button class="lang-btn" data-lang="ja" role="tab" aria-selected="false">日本語</button>
+      </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Hero Card -->
+      <section class="hero-card">
+        <h1 data-translate="heroTitle">계산 후 바로 옆에서 환급 받으세요!</h1>
+        <p data-translate="heroDesc">약국에서 약을 구입하신 후, 영수증을 지참하여 오른쪽에 위치한 <strong>글로벌 텍스프리(Global Tax Free)</strong> 전용 키오스크에서 환급 절차를 진행하세요.</p>
+      </section>
+
+      <!-- Map Card (Handdrawn Sketch Visualized in Elegant Vector) -->
+      <section class="map-card" aria-labelledby="map-heading">
+        <h2 id="map-heading" data-translate="mapTitle">약국 내 키오스크 위치 약도</h2>
+        <p data-translate="mapDesc">약국 계산대에서 계산을 마친 후, 오른쪽으로 이동하시면 주황색 <strong>글로벌 텍스프리 환급 기기</strong>가 있습니다.</p>
+        
+        <div class="map-container">
+          <!-- SVG Map corresponding exactly to the hand-drawn diagram -->
+          <svg viewBox="0 0 450 320" class="map-svg" width="100%">
+            <!-- Background base -->
+            <rect width="450" height="320" rx="10" fill="#fcfbfe" />
+            
+            <!-- Grid Lines for Modern Tech Look -->
+            <defs>
+              <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f1ecf8" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect width="450" height="320" fill="url(#grid)" rx="10" />
+
+            <!-- Pharmacy Checkout Area (Horizontal Bar - 계산대) -->
+            <!-- Left-to-right table representing Checkout Desk -->
+            <rect x="20" y="130" width="280" height="50" rx="6" class="svg-checkout-table" />
+            
+            <!-- Red Register Slots on Checkout Desk (Handdrawn: 계산대 빨간 상자) -->
+            <rect x="70" y="140" width="30" height="30" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" />
+            <path d="M75 155 Q80 145 85 165 T95 150" fill="none" stroke="#ef4444" stroke-width="1.5" />
+            
+            <rect x="150" y="140" width="30" height="30" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" />
+            <path d="M155 155 Q160 145 165 165 T175 150" fill="none" stroke="#ef4444" stroke-width="1.5" />
+            
+            <rect x="230" y="140" width="30" height="30" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5" />
+            <path d="M235 155 Q240 145 245 165 T255 150" fill="none" stroke="#ef4444" stroke-width="1.5" />
+
+            <text x="120" y="115" class="svg-checkout-text" id="map-label-checkout">약국 계산대</text>
+
+            <!-- Kiosk Area (Vertical Column on the Right - 키오스크) -->
+            <!-- Top-to-bottom frame representing Kiosks -->
+            <rect x="300" y="20" width="60" height="160" rx="6" fill="#fffaf0" stroke="#f97316" stroke-width="1.5" />
+            
+            <!-- Green Kiosks (Handdrawn: 키오스크 녹색 상자) -->
+            <rect x="305" y="30" width="50" height="35" rx="4" fill="#fff" stroke="#f97316" stroke-width="1.5" />
+            
+            <rect x="305" y="75" width="50" height="35" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5" />
+            <path d="M310 92 L320 82 M330 102 L340 92" fill="none" stroke="#22c55e" stroke-width="1.5" />
+            
+            <rect x="305" y="120" width="50" height="35" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5" />
+            <path d="M310 137 L320 127 M330 147 L340 137" fill="none" stroke="#22c55e" stroke-width="1.5" />
+            
+            <text x="370" y="105" class="svg-kiosk-text" id="map-label-kiosk">텍스프리 키오스크</text>
+
+            <!-- Current Location Node (Blue Circle - 현위치) -->
+            <circle cx="180" cy="245" r="14" class="svg-current-pulse" />
+            <circle cx="180" cy="245" r="9" class="svg-current-circle" />
+            <text x="180" y="278" text-anchor="middle" class="svg-label-text" id="map-label-current">현위치</text>
+
+            <!-- Animated Path Line (Blue dotted path going Right then Up to Kiosk) -->
+            <path d="M 205 245 L 390 245 L 390 105 L 375 105" fill="none" class="svg-path-line" />
+            
+            <!-- Arrow pointer pointing to kiosk -->
+            <path d="M 378 100 L 368 105 L 378 110 Z" class="svg-arrow-head" />
+          </svg>
+        </div>
+      </section>
+
+      <!-- Steps List -->
+      <section class="steps-container" aria-label="Tax Free Steps">
+        <!-- Step 1 -->
+        <article class="step-card">
+          <div class="step-badge" aria-hidden="true">🛍️</div>
+          <div class="step-content">
+            <h3 data-translate="step1Title">Step 1. 약국 계산 & 환급 전용 영수증 요청</h3>
+            <p data-translate="step1Desc">약품 구매 시 여권을 제시하고, 15,000원 이상 구매 시 직원에게 <strong>글로벌 텍스프리 환급 전용 영수증</strong>을 요청하여 받으세요.</p>
+          </div>
+        </article>
+
+        <!-- Step 2 -->
+        <article class="step-card">
+          <div class="step-badge" aria-hidden="true">🧡</div>
+          <div class="step-content">
+            <h3 data-translate="step2Title">Step 2. 약국 오른쪽 키오스크 방문</h3>
+            <p data-translate="step2Desc">계산대 우측에 있는 주황색 글로벌 텍스프리 키오스크로 이동합니다. 화면 지시에 따라 여권과 환급 영수증의 바코드를 스캔합니다.</p>
+          </div>
+        </article>
+
+        <!-- Step 3 -->
+        <article class="step-card">
+          <div class="step-badge" aria-hidden="true">💵</div>
+          <div class="step-content">
+            <h3 data-translate="step3Title">Step 3. 환급 처리 선택</h3>
+            <p data-translate="step3Desc">키오스크에서 환급받을 수단(카드 환급 또는 모바일 페이 등)을 선택하여 즉시 세금을 환급받습니다. (일부 대상자는 공항 세관 검사 후 환급처리됩니다.)</p>
+          </div>
+        </article>
+
+        <!-- Step 4 -->
+        <article class="step-card">
+          <div class="step-badge" aria-hidden="true">✈️</div>
+          <div class="step-content">
+            <h3 data-translate="step4Title">Step 4. 공항에서 최종 반출 확인 (해당자만)</h3>
+            <p data-translate="step4Desc">즉시환급이 아닌 사후환급 건인 경우, 출국 시 공항 세관에서 구매 물품을 확인받고 최종 환급 승인을 완료해야 합니다.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- FAQ & Important Info Card -->
+      <section class="tips-section">
+        <h2 data-translate="faqTitle">면세 환급 이용 조건 및 팁</h2>
+        <div class="tips-grid">
+          <div class="tip-item">
+            <h4 data-translate="tip1Title">최소 구매 금액</h4>
+            <p data-translate="tip1Desc">약국에서 하루 단일 결제 기준 15,000원 이상 구매 시 대상이 됩니다.</p>
+          </div>
+          <div class="tip-item">
+            <h4 data-translate="tip2Title">여권 지참 필수</h4>
+            <p data-translate="tip2Desc">환급 스캔 및 확인을 위해 실물 여권 또는 모바일 여권을 반드시 지참하셔야 합니다.</p>
+          </div>
+          <div class="tip-item">
+            <h4 data-translate="tip3Title">글로벌 텍스프리 전용</h4>
+            <p data-translate="tip3Desc">본 약국은 Global Tax Free 전용 기기를 제공하여 다른 매장 영수증도 함께 스캔 및 처리가 가능합니다.</p>
+          </div>
+          <div class="tip-item">
+            <h4 data-translate="tip4Title">환급 대상자</h4>
+            <p data-translate="tip4Desc">한국 체류 6개월 미만의 외국인 관광객 또는 3개월 미만 체류 해외 영주권자.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text" data-translate="footerNote">감사합니다. 즐겁고 건강한 여행 되시길 바랍니다!</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

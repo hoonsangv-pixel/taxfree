@@ -12,7 +12,7 @@ const translations = {
     mapKiosk: "退税终端机",
     
     step1Title: "第一步. 结账并索取退税单",
-    step1Desc: "购买药品时请出示护照。单笔消费满 15,000 韩元以上时，请向店员索取 <strong>Global Tax Free 专用退税单</strong>。",
+    step1Desc: "单笔消费满 15,000 韩元以上时，请向店员索取 <strong>Global Tax Free 专用退税单</strong>。<br><strong class='highlight-accent'>（结账时不需要出示护照。）</strong>",
     
     step2Title: "第二步. 前往收银台右侧的退税机",
     step2Desc: "移步至收银台右侧的橙色 Global Tax Free 自助退税机。按照屏幕提示，扫描您的护照和退税单上的条形码。",
@@ -48,7 +48,7 @@ const translations = {
     mapKiosk: "免税キオスク",
     
     step1Title: "Step 1. お会計＆免税書類の受け取り",
-    step1Desc: "お薬の購入時にパスポートをご提示ください。15,000ウォン以上のお買い上げで、スタッフに <strong>Global Tax Free 払い戻し用紙</strong> をご請求ください。",
+    step1Desc: "15,000ウォン以上お買い上げの際は、スタッフに <strong>Global Tax Free 払い戻し用紙</strong> をご請求ください。<br><strong class='highlight-accent'>（お会計時にパスポートは不要です。）</strong>",
     
     step2Title: "Step 2. レジ右側のキオスクへ移動",
     step2Desc: "レジの右側にあるオレンジ色の Global Tax Free キオスクに移動します。画面の指示に従って、パスポートと払い戻し用紙のバーコードをスキャンします。",
@@ -84,7 +84,7 @@ const translations = {
     mapKiosk: "Tax Free Kiosk",
     
     step1Title: "Step 1. Checkout & Get Refund Voucher",
-    step1Desc: "Present your passport when purchasing medicine. For purchases over 15,000 KRW, ask the staff for a <strong>Global Tax Free Voucher</strong>.",
+    step1Desc: "If you purchase over 15,000 KRW, please ask the staff for a <strong>Global Tax Free Voucher</strong>.<br><strong class='highlight-accent'>(Passport is NOT required at the checkout counter.)</strong>",
     
     step2Title: "Step 2. Visit Kiosk to the Right",
     step2Desc: "Go to the orange Global Tax Free kiosk on the right side of the registers. Scan your passport and the refund voucher barcode according to the screen instructions.",

@@ -308,6 +308,14 @@ header {
   font-weight: 700;
 }
 
+/* Highlight style for non-passport checkout instruction in Step 1 */
+.highlight-accent {
+  color: var(--accent-orange) !important;
+  font-weight: 800;
+  display: inline-block;
+  margin-top: 4px;
+}
+
 /* Tips and FAQ area */
 .tips-section {
   background-color: var(--bg-secondary);

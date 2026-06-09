@@ -14,7 +14,7 @@ const translations = {
     step1Title: "第一步. 结账并索取退税单",
     step1Desc: "购买药品时请出示护照。单笔消费满 15,000 韩元以上时，请向店员索取 <strong>Global Tax Free 专用退税单</strong>。",
     
-    step2Title: "第二步. 前往收银台右侧의 退税机",
+    step2Title: "第二步. 前往收银台右侧的退税机",
     step2Desc: "移步至收银台右侧的橙色 Global Tax Free 自助退税机。按照屏幕提示，扫描您的护照和退税单上的条形码。",
     
     step3Title: "第三步. 选择退税方式",
@@ -29,7 +29,7 @@ const translations = {
     tip2Title: "必须携带护照",
     tip2Desc: "退税机扫描需要出示您的护照原件或电子护照。",
     tip3Title: "Global Tax Free 专用",
-    tip3Desc: "本药店配备의 退税终端机亦支持扫描在韩国其他商户获取의 Global Tax Free 退税单。",
+    tip3Desc: "本药店配备的退税终端机亦支持扫描在韩国其他商户获取的 Global Tax Free 退税单。",
     tip4Title: "退税对象",
     tip4Desc: "在韩滞留未满 6 个月的外国游客。",
     
@@ -39,37 +39,37 @@ const translations = {
     title: "免税ガイド",
     subtitle: "薬局を訪れるお客様のための迅速・簡単な免税手続きガイド",
     heroTitle: "お会計のすぐ隣で免税手続きが完了！",
-    heroDesc: "薬局でお会計後、レシート（免税書類）を持ってお隣의 右側にある <strong>Global Tax Free（グローバル税金返還）</strong> 専用キオスクで払い戻しを行ってください。",
+    heroDesc: "薬局でお会計後、レシート（免税書類）を持ってお隣の右側にある <strong>Global Tax Free（グローバル税金返還）</strong> 専用キオスクで払い戻しを行ってください。",
     
-    mapTitle: "薬局내 キオスク位置의 略図",
-    mapDesc: "薬局의 レ지カウンターでお会計を終えた後、rightへ進むとオレンジ色の <strong>Global Tax Free キオスク（自動免税機）</strong> がございます。",
+    mapTitle: "薬局内キオスク位置の略図",
+    mapDesc: "薬局のレジカウンターでお会計を済ませた後、右へ進むとオレンジ色の <strong>Global Tax Free キオスク（自動免税機）</strong> がございます。",
     mapCurrent: "現在地",
     mapCheckout: "薬局レジカウンター",
     mapKiosk: "免税キオスク",
     
-    step1Title: "Step 1. お会計＆免税書類의 受け取り",
-    step1Desc: "お薬의 購入時にパスポートをご提示ください。15,000ウォン以上のお買い上げで、スタッフに <strong>Global Tax Free 払い戻し用紙</strong> をご請求ください。",
+    step1Title: "Step 1. お会計＆免税書類の受け取り",
+    step1Desc: "お薬の購入時にパスポートをご提示ください。15,000ウォン以上のお買い上げで、スタッフに <strong>Global Tax Free 払い戻し用紙</strong> をご請求ください。",
     
     step2Title: "Step 2. レジ右側のキオスクへ移動",
     step2Desc: "レジの右側にあるオレンジ色の Global Tax Free キオスクに移動します。画面の指示に従って、パスポートと払い戻し用紙のバーコードをスキャンします。",
     
-    step3Title: "Step 3. 返金方法의 選択",
-    step3Desc: "キオスク画面でご希望의 返金方法（クレジットカード、Alipay、WeChat Payなど）を選択して、その場で払い戻し手続きを行います。",
+    step3Title: "Step 3. 返金方法の選択",
+    step3Desc: "キオスク画面でご希望の返金方法（クレジットカード、Alipay、WeChat Payなど）を選択して、その場で払い戻し手続きを行います。",
     
     step4Title: "Step 4. 空港での税関確認（必要な場合）",
     step4Desc: "即時還付の対象外で事後還付となる場合は、出国時に空港または港の税関で購入物品を提示し、最終承認を得る必要があります。",
     
-    faqTitle: "免税制度의 조건과 주의사항",
+    faqTitle: "免税制度の条件と注意事項",
     tip1Title: "最低購入金額",
     tip1Desc: "当薬局にて1日あたり 15,000ウォン 以上の購入で対象となります。",
     tip2Title: "パスポート必須",
     tip2Desc: "キオスクでの読み取りには、現物のパスポートまたはモバイルパスポートが必要です。",
     tip3Title: "Global Tax Free 専用キオスク",
-    tip3Desc: "当薬局のキオスクは Global Tax Free 加盟店専用機ですが、他店で発行された同社の免税書類도 스캔 가능합니다.",
+    tip3Desc: "当薬局のキオスクは Global Tax Free 加盟店専用機ですが、他店で発行された同社の免税書類もスキャン可能です。",
     tip4Title: "対象となる旅行者",
     tip4Desc: "韓国滞在期間が 6ヶ月未満 の外国人観光客。",
     
-    footerNote: "ご来店ありがとうございました. 건강하고 즐거운 한국 여행이 되시길 바랍니다!"
+    footerNote: "ご来店ありがとうございました。健康で楽しい韓国旅行になりますように！"
   },
   en: {
     title: "Tax Free Guide",

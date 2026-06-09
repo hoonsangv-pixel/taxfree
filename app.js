@@ -1,79 +1,4 @@
 const translations = {
-  ko: {
-    title: "택스프리 가이드",
-    subtitle: "약국 방문 고객을 위한 쉽고 빠른 세금 환급 가이드",
-    heroTitle: "계산 후 바로 옆에서 환급 받으세요!",
-    heroDesc: "약국에서 약을 구입하신 후, 영수증을 지참하여 오른쪽에 위치한 <strong>글로벌 텍스프리(Global Tax Free)</strong> 전용 키오스크에서 환급 절차를 진행하세요.",
-    
-    // Map labels
-    mapTitle: "약국 내 키오스크 위치 약도",
-    mapDesc: "약국 계산대에서 계산을 마친 후, 오른쪽으로 이동하시면 주황색 <strong>글로벌 텍스프리 환급 기기</strong>가 있습니다.",
-    mapCurrent: "현위치",
-    mapCheckout: "약국 계산대",
-    mapKiosk: "텍스프리 키오스크",
-    
-    // Step Titles
-    step1Title: "Step 1. 약국 계산 & 환급 전용 영수증 요청",
-    step1Desc: "약품 구매 시 여권을 제시하고, 15,000원 이상 구매 시 직원에게 <strong>글로벌 텍스프리 환급 전용 영수증</strong>을 요청하여 받으세요.",
-    
-    step2Title: "Step 2. 약국 오른쪽 키오스크 방문",
-    step2Desc: "계산대 우측에 있는 주황색 글로벌 텍스프리 키오스크로 이동합니다. 화면 지시에 따라 여권과 환급 영수증의 바코드를 스캔합니다.",
-    
-    step3Title: "Step 3. 환급 처리 선택",
-    step3Desc: "키오스크에서 환급받을 수단(카드 환급 또는 모바일 페이 등)을 선택하여 즉시 세금을 환급받습니다. (일부 대상자는 공항 세관 검사 후 환급처리됩니다.)",
-    
-    step4Title: "Step 4. 공항에서 최종 반출 확인 (해당자만)",
-    step4Desc: "즉시환급이 아닌 사후환급 건인 경우, 출국 시 공항 세관에서 구매 물품을 확인받고 최종 환급 승인을 완료해야 합니다.",
-    
-    // Info & FAQ
-    faqTitle: "면세 환급 이용 조건 및 팁",
-    tip1Title: "최소 구매 금액",
-    tip1Desc: "약국에서 하루 단일 결제 기준 15,000원 이상 구매 시 대상이 됩니다.",
-    tip2Title: "여권 지참 필수",
-    tip2Desc: "환급 스캔 및 확인을 위해 실물 여권 또는 모바일 여권을 반드시 지참하셔야 합니다.",
-    tip3Title: "글로벌 텍스프리 전용",
-    tip3Desc: "본 약국은 Global Tax Free 전용 기기를 제공하여 다른 매장 영수증도 함께 스캔 및 처리가 가능합니다.",
-    tip4Title: "환급 대상자",
-    tip4Desc: "한국 체류 6개월 미만의 외국인 관광객 또는 3개월 미만 체류 해외 영주권자.",
-    
-    footerNote: "감사합니다. 즐겁고 건강한 여행 되시길 바랍니다!"
-  },
-  en: {
-    title: "Tax Free Guide",
-    subtitle: "Quick & Easy Tax Refund Guide for Pharmacy Customers",
-    heroTitle: "Get Refunded Right Next to the Checkout!",
-    heroDesc: "After purchasing at the pharmacy, take your receipt and scan it at the <strong>Global Tax Free</strong> kiosk located just to the right.",
-    
-    mapTitle: "Pharmacy & Kiosk Location Map",
-    mapDesc: "After checking out at the pharmacy counter, walk to the right to find the orange <strong>Global Tax Free Kiosk</strong>.",
-    mapCurrent: "You Are Here",
-    mapCheckout: "Pharmacy Counter",
-    mapKiosk: "Tax Free Kiosk",
-    
-    step1Title: "Step 1. Checkout & Get Refund Voucher",
-    step1Desc: "Present your passport when purchasing medicine. For purchases over 15,000 KRW, ask the staff for a <strong>Global Tax Free Voucher</strong>.",
-    
-    step2Title: "Step 2. Visit Kiosk to the Right",
-    step2Desc: "Go to the orange Global Tax Free kiosk on the right side of the registers. Scan your passport and the refund voucher barcode according to the screen instructions.",
-    
-    step3Title: "Step 3. Select Refund Method",
-    step3Desc: "Select your preferred refund option (Credit Card, Alipay, WeChat Pay, etc.) on the kiosk screen to process your refund.",
-    
-    step4Title: "Step 4. Airport Customs Validation (If needed)",
-    step4Desc: "If the refund requires airport validation (not instant), present the purchased goods to customs at the airport/port when departing to finalize your refund.",
-    
-    faqTitle: "Important Tax Free Rules",
-    tip1Title: "Minimum Purchase",
-    tip1Desc: "Minimum 15,000 KRW purchase in a single day at the pharmacy.",
-    tip2Title: "Passport Required",
-    tip2Desc: "You must have your physical passport or mobile passport ready to scan.",
-    tip3Title: "Global Tax Free Kiosk",
-    tip3Desc: "Our pharmacy features a Global Tax Free kiosk, which can also scan eligible refund receipts from other shops.",
-    tip4Title: "Eligible Visitors",
-    tip4Desc: "Foreign tourists staying in Korea for less than 6 months.",
-    
-    footerNote: "Thank you! Enjoy a safe and healthy trip in Korea!"
-  },
   zh: {
     title: "退税指南",
     subtitle: "专为药店顾客准备的快速简便退税指南",
@@ -114,27 +39,27 @@ const translations = {
     title: "免税ガイド",
     subtitle: "薬局を訪れるお客様のための迅速・簡単な免税手続きガイド",
     heroTitle: "お会計のすぐ隣で免税手続きが完了！",
-    heroDesc: "薬局でお会計後、レシート（免税書類）を持ってお隣の右側にある <strong>Global Tax Free（グローバル税金返還）</strong> 専用キオスクで払い戻しを行ってください。",
+    heroDesc: "薬局でお会計後、レシート（免税書類）を持ってお隣의 右側にある <strong>Global Tax Free（グローバル税金返還）</strong> 専用キオスクで払い戻しを行ってください。",
     
-    mapTitle: "薬局内キオスク位置の略図",
-    mapDesc: "薬局のレジカウンターでお会計を終えた後、右へ進むとオレンジ色の <strong>Global Tax Free キオスク（自動免税機）</strong> がございます。",
+    mapTitle: "薬局내 キオスク位置의 略図",
+    mapDesc: "薬局의 レ지カウンターでお会計を終えた後、rightへ進むとオレンジ色の <strong>Global Tax Free キオスク（自動免税機）</strong> がございます。",
     mapCurrent: "現在地",
     mapCheckout: "薬局レジカウンター",
     mapKiosk: "免税キオスク",
     
-    step1Title: "Step 1. お会計＆免税書類の受け取り",
+    step1Title: "Step 1. お会計＆免税書類의 受け取り",
     step1Desc: "お薬의 購入時にパスポートをご提示ください。15,000ウォン以上のお買い上げで、スタッフに <strong>Global Tax Free 払い戻し用紙</strong> をご請求ください。",
     
     step2Title: "Step 2. レジ右側のキオスクへ移動",
     step2Desc: "レジの右側にあるオレンジ色の Global Tax Free キオスクに移動します。画面の指示に従って、パスポートと払い戻し用紙のバーコードをスキャンします。",
     
     step3Title: "Step 3. 返金方法의 選択",
-    step3Desc: "キオスク画面でご希望の返金方法（クレジットカード、Alipay、WeChat Payなど）を選択して、その場で払い戻し手続きを行います。",
+    step3Desc: "キオスク画面でご希望의 返金方法（クレジットカード、Alipay、WeChat Payなど）を選択して、その場で払い戻し手続きを行います。",
     
     step4Title: "Step 4. 空港での税関確認（必要な場合）",
     step4Desc: "即時還付の対象外で事後還付となる場合は、出国時に空港または港の税関で購入物品を提示し、最終承認を得る必要があります。",
     
-    faqTitle: "免税制度の条件と注意事項",
+    faqTitle: "免税制度의 조건과 주의사항",
     tip1Title: "最低購入金額",
     tip1Desc: "当薬局にて1日あたり 15,000ウォン 以上の購入で対象となります。",
     tip2Title: "パスポート必須",
@@ -144,15 +69,56 @@ const translations = {
     tip4Title: "対象となる旅行者",
     tip4Desc: "韓国滞在期間が 6ヶ月未満 の外国人観光客。",
     
-    footerNote: "ご来店ありがとうございました。健康で楽しい韓国旅行になりますように！"
+    footerNote: "ご来店ありがとうございました. 건강하고 즐거운 한국 여행이 되시길 바랍니다!"
+  },
+  en: {
+    title: "Tax Free Guide",
+    subtitle: "Quick & Easy Tax Refund Guide for Pharmacy Customers",
+    heroTitle: "Get Refunded Right Next to the Checkout!",
+    heroDesc: "After purchasing at the pharmacy, take your receipt and scan it at the <strong>Global Tax Free</strong> kiosk located just to the right.",
+    
+    mapTitle: "Pharmacy & Kiosk Location Map",
+    mapDesc: "After checking out at the pharmacy counter, walk to the right to find the orange <strong>Global Tax Free Kiosk</strong>.",
+    mapCurrent: "You Are Here",
+    mapCheckout: "Pharmacy Counter",
+    mapKiosk: "Tax Free Kiosk",
+    
+    step1Title: "Step 1. Checkout & Get Refund Voucher",
+    step1Desc: "Present your passport when purchasing medicine. For purchases over 15,000 KRW, ask the staff for a <strong>Global Tax Free Voucher</strong>.",
+    
+    step2Title: "Step 2. Visit Kiosk to the Right",
+    step2Desc: "Go to the orange Global Tax Free kiosk on the right side of the registers. Scan your passport and the refund voucher barcode according to the screen instructions.",
+    
+    step3Title: "Step 3. Select Refund Method",
+    step3Desc: "Select your preferred refund option (Credit Card, Alipay, WeChat Pay, etc.) on the kiosk screen to process your refund.",
+    
+    step4Title: "Step 4. Airport Customs Validation (If needed)",
+    step4Desc: "If the refund requires airport validation (not instant), present the purchased goods to customs at the airport/port when departing to finalize your refund.",
+    
+    faqTitle: "Important Tax Free Rules",
+    tip1Title: "Minimum Purchase",
+    tip1Desc: "Minimum 15,000 KRW purchase in a single day at the pharmacy.",
+    tip2Title: "Passport Required",
+    tip2Desc: "You must have your physical passport or mobile passport ready to scan.",
+    tip3Title: "Global Tax Free Kiosk",
+    tip3Desc: "Our pharmacy features a Global Tax Free kiosk, which can also scan eligible refund receipts from other shops.",
+    tip4Title: "Eligible Visitors",
+    tip4Desc: "Foreign tourists staying in Korea for less than 6 months.",
+    
+    footerNote: "Thank you! Enjoy a safe and healthy trip in Korea!"
   }
 };
 
 document.addEventListener("DOMContentLoaded", () => {
   const langButtons = document.querySelectorAll(".lang-btn");
   
-  // Set default language
-  let currentLang = localStorage.getItem("taxfree_lang") || "ko";
+  // Set default language to 'zh' (Chinese) for tourists
+  let currentLang = localStorage.getItem("taxfree_lang") || "zh";
+  
+  // Clean localStorage if it contains outdated "ko" setting
+  if (currentLang === "ko") {
+    currentLang = "zh";
+  }
   
   // Apply translation
   const applyLanguage = (lang) => {
@@ -182,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (mapKioskText && data.mapKiosk) mapKioskText.textContent = data.mapKiosk;
       
       // Update page title
-      document.title = "베리뉴약국 " + data.title;
+      document.title = "Berrynew Pharmacy " + data.title;
       
       // Update HTML lang attribute
       document.documentElement.lang = lang;
